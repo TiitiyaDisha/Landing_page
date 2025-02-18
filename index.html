@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Project/dist/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <button class="toggles" id="icon" onclick="myFun(this)">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+        </button>
+
+        <div class="nav-bar">
+            <nav class="nav-menu">
+                <ul class="menu" id="List">
+                    <!-- <div class="logo"> -->
+                    <li><a href="#"><img src="Images/logo.png" alt="Logo" id="img"></a></li>
+                    <li class="item1"><a href="#" class="active"> Beranda</a></li>
+                    <li class="item2"><a href="#" class="list1"> koleksi mobil</a></li>
+                    <li class="item3"><a href="#" class="list2"> review mobil</a></li>
+                    <li class="item4"><a href="#" class="list3"> berita mobil</a></li>
+                    <li class="last-item"><a href="#" class="contact"><i class="fa-brands fa-whatsapp"></i>
+                            08123456789</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="banner-img">
+        <img src="Images/Road.png" alt="img" class="empty-road">
+            <div class="sec-img">
+                <img src="Images/Car.png" alt="img">
+            </div>
+        <div class="img-txt">
+            <P class="con1">Mobil Impian Anda Menunggu di Sini</P>
+            <p class="con2">Pilihan mobil berkualitas, harga terjangkau dan pelayanan terbaik hanya ada di sini</p>
+            <div class="btn-click">
+                <div class="btn-txt1">
+                    <button type="button" class="btn btn-primary" id="btn1">Hubungi Kami</button>
+                    <button type="button" class="btn" id="btn2">Lebih Lanjut</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Project/JS/index.js"> </script>
+</body>
+
+</html>
