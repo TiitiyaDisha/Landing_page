@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    right: 0;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: right;
+  }
+  
+  .toggles {
+    display: none;
+    z-index: 7;
+    bottom: -60px;
+    border: none;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .toggles #icon {
+    display: inline-block;
+    padding: 0 25px;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: flex;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(26, 26, 26);
+    margin: 4px 0;
+    cursor: pointer;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+  }
+  
+  .banner-img img {
+    height: 100vh;
+    width: 100vw;
+    transform: rotateY(-180deg);
+    box-sizing: border-box;
+  }
+  
+  .sec-img img {
+    width: 1010px;
+    height: 708px;
+    transform: rotate(0deg);
+    position: fixed;
+    top: 165px;
+    left: 375px;
+  }
+  
+  .img-txt {
+    height: 378px;
+    width: 384px;
+    position: absolute;
+    top: 210px;
+    left: 90px;
+    
+    color: #ffffff;
+  }
+  
+  .con1 {
+    height: 193px;
+    width: 384px;
+    font-size: 50px;
+    line-height: 60.09px;
+    font-weight: 600;
+  }
+  
+  .con2 {
+    height: 152px;
+    width: 411px;
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+  
+  .nav-bar {
+    position: absolute;
+    padding: 0px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  
+  nav {
+    padding: 24px 55px;
+    display: flex;
+    width: 100vw;
+    height: 88px;
+    box-sizing: border-box;
+    background-color: rgba(26, 26, 26, 0.5);
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  nav ul li {
+    text-transform: capitalize;
+    width: 170px;
+    height: 40px;
+    padding: 8px 2px;
+  }
+  nav ul li a #img {
+    height: 40px;
+    width: 144px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+  nav ul li a .active {
+    border-bottom: 4px solid rgb(202, 63, 63);
+  }
+  
+  li .contact {
+    background-color: rgb(18, 140, 126);
+    border: rgb(18, 140, 126);
+    border-radius: 20px;
+    padding: 12px 10px;
+  }
+  
+  .btn-click {
+    height: 60px;
+    width: 333px;
+    gap: 8px;
+  }
+  
+  .btn-txt1 {
+    border-radius: 4px;
+    padding: 10px 0;
+  }
+  
+  #btn1 {
+    height: 60px;
+    width: 189px;
+    font-size: 22px;
+    position: relative;
+    top: 64px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+  }
+  
+  #btn2 {
+    color: white;
+    height: 60px;
+    width: 168px;
+    position: relative;
+    top: 7px;
+    left: 193px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+  }
+  
+  @media (max-width: 1150px) {
+    .sec-img img {
+      height: 613px;
+      width: 881px;
+      position: fixed;
+      top: 146px;
+      left: 301px;
+    }
+    .img-txt {
+      height: 378px;
+      width: 384px;
+      position: absolute;
+      top: 183px;
+      left: 45px;
+      color: #ffffff;
+    }
+    li .contact {
+      background-color: rgb(18, 140, 126);
+      border: rgb(18, 140, 126);
+      border-radius: 20px;
+      padding: 5px 6px;
+    }
+    .con1 {
+      position: relative;
+      height: 193px;
+      width: 384px;
+      font-size: 45px;
+      line-height: 50.09px;
+    }
+    .con2 {
+      height: 152px;
+      width: 411px;
+      top: -62px;
+      font-size: 27px;
+      line-height: 40px;
+      position: relative;
+    }
+    #btn1 {
+      height: 49px;
+      width: 175px;
+      top: -82px;
+      font-size: 18px;
+      position: relative;
+    }
+    #btn2 {
+      color: white;
+      height: 49px;
+      width: 153px;
+      top: -85px;
+      left: 13px;
+      position: relative;
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 992px) {
+    .toggles {
+      display: inline-block;
+    }
+    #icon {
+      float: right;
+    }
+    .sec-img img {
+      height: 549px;
+      width: 658px;
+      position: fixed;
+      top: 186px;
+      left: 230px;
+    }
+    * {
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+    * .img-txt {
+      height: 278px;
+      width: 200px;
+      top:122px;
+      left: 42px;
+    }
+    * .con1 {
+      position: relative;
+      height: 118px;
+      width: 294px;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    * .con2 {
+      height: 99px;
+      width: 298px;
+      top: 19px;
+      font-size: 25px;
+      line-height: 30px;
+      position: relative;
+    }
+    * #btn1 {
+      height: 49px;
+      width: 148px;
+      top: 62px;
+      font-size: 18px;
+      position: relative;
+    }
+    * #btn2 {
+      color: white;
+      height: 49px;
+      width: 153px;
+      top: 64px;
+      left: 13px;
+      position: relative;
+      font-size: 18px;
+    }
+    * nav {
+      background-color: rgba(26, 26, 26, 0);
+      /* Could also be inline-block or flex, depending on layout */
+    }
+    * nav ul {
+      display: none;
+      right: 0%;
+      /* Initially hidden */
+      flex-direction: column;
+      background-color: rgba(26, 26, 26, 0.5);
+      /* Adjust as needed */
+      width: 100%;
+      /* Important for positioning the dropdown */
+      z-index: 1;
+      /* Ensure it's above other content */
+      align-items: center;
+    }
+    * nav ul.show {
+      display: flex;
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .sec-img img {
+      height: 454px;
+      width: 614px;
+      position: fixed;
+      top: 335px;
+      left: 106px;
+    }
+  }
+  @media (max-width: 600px) {
+    .sec-img img {
+      height: 454px;
+      width: 716px;
+      position: fixed;
+      top: 172px;
+      left: 15px;
+    }
+  }
+  @media (max-width: 595px) {
+    .sec-img img {
+      height: 418px;
+      width: 530px;
+      position: fixed;
+      top: 275px;
+      left: 58px;
+    }
+    .img-txt {
+      height: 278px;
+      width: 200px;
+      position: absolute;
+      top: 170px;
+      left: 19px;
+      color: #ffffff;
+    }
+    .con1 {
+      height: 98px;
+      width: 220px;
+      font-size: 20px;
+      line-height: 27px;
+      top: -20px;
+      position: relative;
+    }
+    .con2 {
+      height: 80px;
+      width: 242px;
+      top: -46px;
+      font-size: 16px;
+      line-height: 22px;
+      /* top: -46; */
+      position: relative;
+    }
+    #btn1 {
+      height: 38px;
+      width: 118px;
+      top: -74px;
+      font-size: 12px;
+      position: relative;
+    }
+    #btn2 {
+      color: white;
+      height: 38px;
+      width: 112px;
+      top: -75px;
+      position: relative;
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 480px) {
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .sec-img img {
+      height: 350px;
+      width: 408px;
+      position: fixed;
+      top: 288px;
+      left: 21px;
+    }
+    .img-txt {
+      height: 278px;
+      width: 200px;
+      position: absolute;
+      top: 133px;
+      left: 47px;
+      color: #ffffff;
+    }
+    .con1 {
+      height: 82px;
+      width: 161px;
+      font-size: 16px;
+      line-height: 21px;
+    }
+    .con2 {
+      height: 95px;
+      width: 207px;
+      top: -51px;
+      font-size: 15px;
+      line-height: 20px;
+      position: relative;
+    }
+    #btn1 {
+      height: 38px;
+      width: 103px;
+      top: -47px;
+      font-size: 10px;
+      position: relative;
+    }
+    #btn2 {
+      color: white;
+      height: 40px;
+      width: 96px;
+      top: -50px;
+      position: relative;
+      font-size: 10px;
+    }
+  }
